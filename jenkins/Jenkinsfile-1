@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  stages {
+    stage('version') {
+      steps {
+        sh 'pwsh --version'
+      }
+    }
+    stage('hname') {
+      steps {
+        sh 'hostname.ps1'
+      }
+    }
+  }
+}
