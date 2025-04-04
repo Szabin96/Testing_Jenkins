@@ -1,1 +1,1 @@
-hostname
+echo megy
